@@ -173,7 +173,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationUsersMigrations\201712081055262_initial.cs" />
+    <Compile Include="Migrations\ApplicationUsersMigrations\201712081055262_initial.Designer.cs">
+      <DependentUpon>201712081055262_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationUsersMigrations\Configuration.cs" />
+    <Compile Include="Migrations\ClubMigrations\201712081052310_initial.cs" />
+    <Compile Include="Migrations\ClubMigrations\201712081052310_initial.Designer.cs">
+      <DependentUpon>201712081052310_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ClubMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClubModels\Club.cs" />
@@ -253,6 +261,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ApplicationUsersMigrations\201712081055262_initial.resx">
+      <DependentUpon>201712081055262_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClubMigrations\201712081052310_initial.resx">
+      <DependentUpon>201712081052310_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
